@@ -1,0 +1,49 @@
+.portfolio {
+    padding: $section-padding;
+    &__content {}
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__text {
+        margin-bottom: 60px;
+    }
+    &__photo {
+        margin-bottom: 50px;
+    }
+    &__button {}
+}
+
+@media screen and (max-width: $bp-2) {
+    .portfolio {
+        padding: $section-padding-2;
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__photo {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: $bp-3) {
+    .portfolio {
+        padding: $section-padding-3;
+        &__title {
+            margin-bottom: 35px;
+        }
+        &__text {
+            margin-bottom: 55px;
+        }
+        &__photo {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .portfolio {
+        &__text {
+            margin-bottom: 45px;
+        }
+    }
+}

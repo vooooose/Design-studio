@@ -1,0 +1,31 @@
+.socials {
+    &__link {
+        display: inline-block;
+        color: $second-text-color;
+        font-size: 2.5rem;
+        transition: all 0.3s ease 0s;
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+        &:hover {
+            color: $hover-color;
+            transform: scale(1.3);
+        }
+    }
+}
+
+@media screen and (max-width: $bp-2) {
+    .socials {
+        &__link {
+            font-size: 2.25rem;
+        }
+    }
+}
+
+@media screen and (max-width: $bp-3) {
+    .socials {
+        &__link {
+            font-size: 2rem;
+        }
+    }
+}

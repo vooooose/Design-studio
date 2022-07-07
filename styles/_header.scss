@@ -1,0 +1,32 @@
+.header {
+    background-color: rgba(130, 130, 130, 0.6);
+    padding: 23px 0;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: $bp-2) {
+    .header {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: $bp-3) {
+    .header {
+        padding: 15px 0;
+        &__logo {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .header {
+        &__content {
+            flex-direction: column;
+        }
+    }
+}

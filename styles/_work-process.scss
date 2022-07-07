@@ -1,0 +1,37 @@
+.work-process {
+    padding: $section-padding;
+    &__content {}
+    &__title {
+        margin-bottom: 75px;
+    }
+    &__way {
+        margin-bottom: 100px;
+    }
+    &__form {}
+}
+
+@media screen and (max-width: $bp-2) {
+    .work-process {
+        padding: $section-padding-2;
+        &__content {}
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__way {
+            margin-bottom: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: $bp-3) {
+    .work-process {
+        padding: $section-padding-3;
+        &__content {}
+        &__title {
+            margin-bottom: 35px;
+        }
+        &__way {
+            margin-bottom: 70px;
+        }
+    }
+}

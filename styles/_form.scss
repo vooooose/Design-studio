@@ -1,0 +1,44 @@
+.form {
+    border: 2px solid #F0BC64;
+    border-radius: 21px;
+    max-width: 600px;
+    padding: 60px 10px;
+    margin: 0 auto;
+    &__title {
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 35 / 26 * 100%;
+        margin-bottom: 62px;
+    }
+    input {
+        border: 1px solid #C4C4C4;
+        border-radius: 6px;
+        width: 310px;
+        font-weight: 300;
+        line-height: 27 / 20 * 100%;
+        color: #575757;
+        padding: 16px;
+        display: block;
+        margin: 0 auto 25px;
+        &:focus {
+            outline-color: $hover-color;
+        }
+        &:last-of-type {
+            margin-bottom: 60px;
+        }
+    }
+    &__button {
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .form {
+        input {
+            width: 80%;
+        }
+        &__button {
+            width: 80%;
+        }
+    }
+}

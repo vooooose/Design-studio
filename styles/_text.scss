@@ -1,0 +1,17 @@
+.text {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 33 / 24 * 100%;
+}
+
+@media screen and (max-width: $bp-2) {
+    .text {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .text {
+        font-size: 0.9rem;
+    }
+}

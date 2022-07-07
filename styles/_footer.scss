@@ -1,0 +1,38 @@
+.footer {
+    padding: $section-padding;
+    background-color: #434343;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {}
+    &__socials {}
+    &__contact {}
+}
+
+@media screen and (max-width: $bp-2) {
+    .footer {
+        padding: $section-padding-2;
+    }
+}
+
+@media screen and (max-width: $bp-3) {
+    .footer {
+        padding: $section-padding-3;
+        &__logo {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .footer {
+        &__content {
+            flex-direction: column;
+            &>*:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

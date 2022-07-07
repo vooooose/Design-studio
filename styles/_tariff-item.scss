@@ -1,0 +1,123 @@
+.tariff-item {
+    padding: 40px 10px;
+    width: 364px;
+    min-height: 466px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__title {
+        font-weight: 700;
+        font-size: 1.1rem;
+        line-height: 30 / 22 * 100%;
+        color: #3A3A3A;
+        margin-bottom: 25px;
+    }
+    &__price {
+        font-family: 'Roboto Slab';
+        font-weight: 700;
+        font-size: 2.1rem;
+        line-height: 55 / 42 * 100%;
+        margin-bottom: 30px;
+    }
+    &__about {
+        flex: 1 1 auto;
+        margin-bottom: 38px;
+    }
+    &__info {
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 22 / 16 * 100%;
+        color: #3E3E3E;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    &__button {
+        flex: 0 0 auto;
+    }
+    &--sale {
+        padding: 61px 10px 62px;
+        width: 376px;
+        min-height: 509px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+        position: relative;
+        &::before {
+            content: "%";
+            background-color: #F33F3F;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            font-family: Conv_OpenSansHebrew-Bold;
+            font-weight: 700;
+            font-size: 0.9rem;
+            line-height: 32px;
+            text-align: center;
+            color: $second-text-color;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .tariff-item {
+        width: 300px;
+        min-height: 448px;
+        &>*:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        &__title {
+            font-size: 1rem;
+        }
+        &__price {
+            font-size: 1.9rem;
+        }
+        &__about {
+            max-width: 209px;
+            margin: 0 auto 30px;
+        }
+        &__info {
+            font-size: 0.7rem;
+        }
+        &__button {
+            width: 200px;
+            height: 46px;
+            font-size: 0.7rem;
+            line-height: 46px;
+        }
+        &--sale {
+            padding: 60px 10px;
+            width: 300px;
+            min-height: 488px;
+        }
+    }
+}
+
+@media screen and (max-width: 963px) {
+    .tariff-item {
+        width: 100%;
+        min-height: 100%;
+        &__about {
+            flex: 0 1 auto;
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+        &--sale {
+            padding: 40px 10px;
+            width: 100%;
+            min-height: 100%;
+            &::before {
+                width: 44px;
+                height: 44px;
+                font-size: 1.1rem;
+                line-height: 44px;
+                top: 17px;
+                left: 22px;
+            }
+        }
+    }
+}

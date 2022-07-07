@@ -1,0 +1,39 @@
+.contact {
+    text-align: left;
+    &__link {
+        display: block;
+        color: $second-text-color;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 33 / 24 * 100%;
+        transition: color 0.3s ease 0s;
+        &:hover {
+            color: $hover-color;
+        }
+    }
+    &>:not(:last-child) {
+        margin-bottom: 6px;
+    }
+}
+
+@media screen and (max-width: $bp-2) {
+    .contact {
+        &__link {
+            font-size: 1.1rem;
+        }
+        &>:not(:last-child) {
+            margin-bottom: 9px;
+        }
+    }
+}
+
+@media screen and (max-width: $bp-3) {
+    .contact {
+        &__link {
+            font-size: 1rem;
+        }
+        &>:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+}

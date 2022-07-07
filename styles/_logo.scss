@@ -1,0 +1,19 @@
+.logo {
+    display: block;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 44 / 32 * 100%;
+    letter-spacing: 0.065em;
+    color: $second-text-color;
+    transition: all 0.3s ease 0s;
+    &:hover {
+        color: $hover-color;
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (max-width: $bp-2) {
+    .logo {
+        font-size: 1.5rem;
+    }
+}
